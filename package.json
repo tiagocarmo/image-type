@@ -3,14 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "deploy": "gh-pages -d dist"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
-  },
+  "devDependencies": {},
   "homepage": "https://tiagocarmo.github.io/image-type"
 }
