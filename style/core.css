@@ -1,0 +1,124 @@
+:root {
+  --custom-gray: #CCCCCC;
+  --custom-petroleum: #0A2D32;
+  --custom-green: #00DC87;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'cartograph-light', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'cartograph-bold-italic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 52px;
+}
+
+input[type=range] {
+  width: 98%;
+}
+
+a:hover, a:active, a:focus, a:visited {
+  color: blue;
+}
+
+.presentation {
+  width: 1400px;
+  height: 640px;
+  overflow: auto;
+}
+
+.reminder {
+  margin-top: 40px;
+  color: var(--custom-gray);
+}
+
+.bitmap div {
+  text-align: center;
+}
+
+.bitmap div div {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border: 1px solid black;
+  margin: 0 1px -8px;
+}
+
+.hide {
+  display: none
+}
+
+.btn {
+  margin-top: 16px;
+  cursor: pointer;
+  display: inline-block;
+  border-bottom: white 1px solid;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+  color: red;
+  border-bottom: black 1px solid;
+}
+
+.black-border {
+  border-bottom: black 1px solid;
+}
+
+.txt-left {
+  text-align: left;
+  float: left;
+}
+
+.txt-right {
+  text-align: right;
+  float: right;
+}
+
+.highlight-green {
+  color: var(--custom-green);
+  text-shadow: 1px 1px 5px var(--custom-gray);
+}
+
+.highlight-red {
+  color: red;
+  text-shadow: 1px 1px 5px var(--custom-gray);
+}
+
+.image-box {
+  height: 300px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.center-content {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.bg-blue {
+  background-color: blue;
+}

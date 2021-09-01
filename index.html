@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagens para Web</title>
+  <link href='style/cartograph.css' rel='stylesheet' />
+  <link href='style/core.css' rel='stylesheet' />
+  <script src='js/colors.js'></script>
+  <script src='js/core.js'></script>
+</head>
+
+<body>
+  <div class='' id='home'>
+    <div class='presentation'>
+      <h1>Imagens para Web</h1>
+      <p>O proposito dessa apresentação é demonstrar os <strong class='highlight-red'> tipos de imagens</strong> /
+        <strong>diferenças entre eles</strong>, <strong class='highlight-red'><span class='black-border'>como</span> e
+          <span class='black-border'>quando</span> usar cada um deles</strong> e <strong>algumas dicas para
+          otimização</strong>.
+      </p>
+      <p class='reminder'><strong>Lembrete</strong>: Exibir em tela cheia, com zoom em 125% pra ficar ok :D</p>
+    </div>
+    <span class='btn txt-right' onClick='showContent("#home", "#timeTunnel")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='timeTunnel'>
+    <div class='presentation'>
+      <h1>Contexto tecnológico</h1>
+      <p>Antes de iniciar os macro-tópicos da apresentação, seria legal conhecermos a <strong
+          class='highlight-red'>linha do tempo</strong> referente a imagens digitais.</p>
+      <img src='images/presentation/time-tunnel.jpg' alt='Imagem da série "The Time Tunnel (O Túnel do Tempo)'
+        class='center-content' />
+    </div>
+    <span class='btn txt-left' onClick='showContent("#timeTunnel", "#home")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#timeTunnel", "#timeline")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='timeline'>
+    <div class='presentation'>
+      <h1>Linha do Tempo (principais datas)</h1>
+      <ul>
+        <li>1985 - .EPS / MS Paint, .MSP / PC Paintbrush, .PCX / Windows 1.0, .ICO</li>
+        <li>1986 - .TIFF / .XBM</li>
+        <li>1987 - <strong class='highlight-red'>.GIF</strong></li>
+        <li>1989 - <strong>CorelDraw, .CDR</strong> / World Wide Web em teste / .XPM</li>
+        <li>1990 - <strong>Adobe Photoshop, .PSD</strong> / <strong class='highlight-red'>.BMP</strong> / .WBMP / .WMF /
+          1º web browser</li>
+        <li>1991 - Adobe Premiere / <strong class='highlight-red'>.JPEG</strong> / World Wide Web pública</li>
+        <li>1995 - Adobe Illustrator, <strong>.AI</strong></li>
+        <li>1996 - Adobe Flash, .SWF / <strong class='highlight-red'>.PNG</strong></li>
+        <li>2001 - RAW (TIFF/EP) / <strong class='highlight-red'>SVG - Scalable Vector Graphics</strong></li>
+        <li>2010 - <strong class='highlight-red'>.WEBP</strong></li>
+      </ul>
+      <p><strong>Referência</strong>: <a href='http://www.visuarea.com.br/artigos/as-imagens-digitais-uma-introducao'
+          target='_blank'>visuarea</a></p>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#timeline", "#timeTunnel")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#timeline", "#formatGif")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='formatGif'>
+    <div class='presentation'>
+      <h1>1987 - GIF</h1>
+      <p>O GIF é uma imagem em formato de <strong>bitmap</strong>, que suporta até 8 bits por pixel para cada imagem, o
+        que permite que as figuras obterem uma cartela de até 256 cores. Seu diferencial diante dos demais formatos
+        existentes é que permite que se crie animações ou pequenos clipes.</p>
+      <p><strong>Exemplo</strong>:</p>
+      <img src='images/gif/anigif_enhanced-buzz-8915-1405685252-4.gif'
+        alt='Exemplo de imagem simulando vídeo no formato GIF' class='center-content' />
+      <p><strong>Referência</strong>: <a
+          href='https://www.tecnoveste.com.br/gif-o-que-e-para-que-serve-e-como-funciona/'
+          target='_blank'>tecnoveste</a></p>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#formatGif", "#timeline")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#formatGif", "#formatBmp")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='formatBmp'>
+    <div class='presentation'>
+      <h1>1990 - BMP</h1>
+      <p>BMP é um formato de imagem bitmap, ou seja, um mapa de bits. É uma tabela cujos elementos contêm códigos de
+        cores. Essa tabela pode ser visualizada na tela como uma imagem colorida, onde cada valor de cor é substituído
+        pela cor propriamente dita, ou na forma que ela é realmente gravada, com os códigos das cores.</p>
+      <p><strong>Formato da imagem</strong>:</p>
+      <img src='images/gif/mapa-bits.gif' alt='Exemplo do formato bitmap (mapa de bits)' class='center-content' />
+      <p class='reminder'><strong>Lembrete</strong>: Exibir o console do navegador para demonstrar a "ideia" do bitmap
+      </p>
+      <p><strong>Referências</strong>: <a
+          href='https://www.tecnoveste.com.br/gif-o-que-e-para-que-serve-e-como-funciona/'
+          target='_blank'>tecnoveste</a>,
+        <a href='https://www.ciabyte.com.br/faq/o-que-e-imagem-bitmap.asp' target='_blank'>ciabyte</a>
+      </p>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#formatBmp", "#formatGif")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#formatBmp", "#fakeVisualBitMap")'>Próximo</span>
+  </div>
+
+  <div class='presentation hide' id='fakeVisualBitMap'>
+    <div class='presentation'>
+      <h1>1990 - BMP</h1>
+      <div class='bitmap'>
+        <div id='visualBitMap'></div>
+      </div>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#fakeVisualBitMap", "#formatBmp")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#fakeVisualBitMap", "#fakeSpaceInvaders")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='fakeSpaceInvaders'>
+    <div class='presentation'>
+      <h1>1990 - BMP</h1>
+      <div class='bitmap'>
+        <div id='spaceInvaders'></div>
+      </div>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#fakeSpaceInvaders", "#fakeVisualBitMap")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#fakeSpaceInvaders", "#fakeIconMinu")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='fakeIconMinu'>
+    <div class='presentation'>
+      <h1>1990 - BMP</h1>
+      <div class='bitmap'>
+        <div id='iconMinu'></div>
+      </div>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#fakeIconMinu", "#fakeSpaceInvaders")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#fakeIconMinu", "#formatJpeg")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='formatJpeg'>
+    <div class='presentation'>
+      <h1>1991 - JPEG (JPG)</h1>
+      <p>JPEG (Joint Photographic Experts Group) é um formato de arquivo de imagem popular, geralmente usado por câmeras
+        digitais para armazenar fotos, pois suporta 16 milhões cores. O formato também suporta vários níveis de
+        compactação, o que o torna ideal para gráficos para web. </p>
+      <p><strong>Exemplo</strong>:</p>
+      <img src='images/jpg/o-que-e-jpeg_jpg.jpeg' alt='Exemplo de imagem no formato JPG' class='center-content' />
+      <p><strong>Referência</strong>: <a
+          href='https://www.eduardo-monica.com/new-blog/o-que-e-jepg-jpg-vantagens-desvantagens' target='_blank'>Eduardo
+          & Mônica</a></p>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#formatJpeg", "#fakeIconMinu")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#formatJpeg", "#formatPng")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='formatPng'>
+    <div class='presentation'>
+      <h1>1996 - PNG</h1>
+      <p>A sigla PNG significa “Portable Network Graphics” e consiste em um formato de imagem amplamente utilizado no ambiente web (mas não limitado ao mesmo).
+        Além disso, seus grandes diferenciais estão na capacidade da imagem não perder a qualidade no caso de compressão
+        e na capacidade de suportar a transparência. </p>
+      <p><strong>Formato</strong>:</p>
+      <img src='images/png/formato-png.png' alt='Exemplo de imagem simulando vídeo no formato GIF'
+        class='center-content' />
+      <p><strong>Exemplo</strong> (aplicação sobre uma div com background azul):</p>
+      <div class='bg-blue'>
+        <img
+          src='images/png/kisspng-computer-icons-sample-directory-futuristic-5abea10ab94e57.312077521522442506759.png'
+          alt='Exemplo de imagem simulando vídeo no formato GIF' class='center-content' />
+      </div>
+      <p><strong>Referências</strong>: <a href='https://www.futuraexpress.com.br/blog/o-que-e-png/'
+          target='_blank'>futuraexpress</a>,
+        <a href='https://www.gratispng.com/png-1j58sx/' target='_blank'>gratispng</a>
+      </p>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#formatPng", "#formatJpeg")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#formatPng", "#formatSVG")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='formatSVG'>
+    <div class='presentation'>
+      <h1>2001 - SVG</h1>
+      <p>Carece de mais informações.</p>
+      <p><strong>Exemplo</strong>:</p>
+      <img src='images/svg/logotipo-minu.svg' alt='Exemplo de imagem no formato SVG' class='center-content' />
+      <p><strong>Referência</strong>: <a
+          href='https://www.xxx.com' target='_blank'>xxx</a></p>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#formatSVG", "#formatPng")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#formatSVG", "#bmpLogoMinu")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='bmpLogoMinu'>
+    <div class='presentation'>
+      <input type='range' min='1' max='10' value='1' class='slider' id='range-bmp'>
+      <p><strong>Nome do arquivo</strong>: logotipo-minu.bmp
+        <br /><strong>Tipo</strong>: BMP (criado no GIMP - Abrir no editor para mostrar)
+        <br /><strong>Tamanho</strong>: 9.7kb
+      </p>
+      <div class='image-box bmp'>
+        <img src='images/bmp/logotipo-minu.bmp' alt='Logo Minu' id='bmp-img' />
+      </div>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#bmpLogoMinu", "#fakeIconMinu")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#bmpLogoMinu", "#svgLogoMinu")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='svgLogoMinu'>
+    <div class='presentation'>
+      <input type='range' min='1' max='10' value='1' class='slider' id='range-svg'>
+      <p><strong>Nome do arquivo</strong>: logotipo-minu.svg
+        <br /><strong>Tipo</strong>: SVG (criado pelo Tiago Parra, editado no VS Code)
+        <br /><strong>Tamanho</strong>: 2kb (sem minificar o fonte)
+      </p>
+      <div class='image-box svg'>
+        <img src='images/svg/logotipo-minu.svg' alt='Logo Minu' id='svg-img' />
+      </div>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#svgLogoMinu", "#bmpLogoMinu")'>Anterior</span>
+  </div>
+
+  <script src='js/space-invaders.js'></script>
+  <script src='js/icon-minu.js'></script>
+  <script src='js/visual-bitmap.js'></script>
+  <script src='js/bmp-logo-minu.js'></script>
+  <script src='js/svg-logo-minu.js'></script>
+</body>
+
+</html>

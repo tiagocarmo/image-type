@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'cartograph-light';
+  src: url('../font/cartograph/light/cartographcf-light-webfont.woff2') format('woff2'),
+    url('../font/cartograph/light/cartographcf-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  display: swap;
+}
+
+@font-face {
+  font-family: 'cartograph-bold-italic';
+  src: url('../font/cartograph/bold-italic/cartographcf-bolditalic-webfont.woff2') format('woff2'),
+    url('../font/cartograph/bold-italic/cartographcf-bolditalic-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  display: swap;
+}
