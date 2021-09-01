@@ -48,20 +48,20 @@ a:hover, a:active, a:focus, a:visited {
 }
 
 .reminder {
-  margin-top: 40px;
   color: var(--custom-gray);
 }
 
 .bitmap div {
   text-align: center;
+  line-height: 0px;
 }
 
 .bitmap div div {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   display: inline-block;
   border: 1px solid black;
-  margin: 0 1px -8px;
+  margin: 0px;
 }
 
 .hide {

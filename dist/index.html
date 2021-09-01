@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imagens para Web</title>
-  <link href='style/cartograph.css' rel='stylesheet' />
-  <link href='style/core.css' rel='stylesheet' />
-  <script src='js/colors.js'></script>
-  <script src='js/core.js'></script>
+  <link href='./style/cartograph.css' rel='stylesheet' />
+  <link href='./style/core.css' rel='stylesheet' />
+  <script src='./js/colors.js'></script>
+  <script src='./js/core.js'></script>
 </head>
 
 <body>
@@ -21,7 +21,6 @@
           <span class='black-border'>quando</span> usar cada um deles</strong> e <strong>algumas dicas para
           otimização</strong>.
       </p>
-      <p class='reminder'><strong>Lembrete</strong>: Exibir em tela cheia, com zoom em 125% pra ficar ok :D</p>
     </div>
     <span class='btn txt-right' onClick='showContent("#home", "#timeTunnel")'>Próximo</span>
   </div>
@@ -29,9 +28,9 @@
   <div class='hide' id='timeTunnel'>
     <div class='presentation'>
       <h1>Contexto tecnológico</h1>
-      <p>Antes de iniciar os macro-tópicos da apresentação, seria legal conhecermos a <strong
-          class='highlight-red'>linha do tempo</strong> referente a imagens digitais.</p>
-      <img src='images/presentation/time-tunnel.jpg' alt='Imagem da série "The Time Tunnel (O Túnel do Tempo)'
+      <p>Antes de iniciarmos os principais tópicos da apresentação, seria legal conhecermos a <strong
+          class='highlight-red'>linha do tempo</strong> referente às imagens digitais.</p>
+      <img src='./images/presentation/time-tunnel.jpg' alt='Imagem da série "The Time Tunnel (O Túnel do Tempo)'
         class='center-content' />
     </div>
     <span class='btn txt-left' onClick='showContent("#timeTunnel", "#home")'>Anterior</span>
@@ -68,7 +67,7 @@
         que permite que as figuras obterem uma cartela de até 256 cores. Seu diferencial diante dos demais formatos
         existentes é que permite que se crie animações ou pequenos clipes.</p>
       <p><strong>Exemplo</strong>:</p>
-      <img src='images/gif/anigif_enhanced-buzz-8915-1405685252-4.gif'
+      <img src='./images/gif/anigif_enhanced-buzz-8915-1405685252-4.gif'
         alt='Exemplo de imagem simulando vídeo no formato GIF' class='center-content' />
       <p><strong>Referência</strong>: <a
           href='https://www.tecnoveste.com.br/gif-o-que-e-para-que-serve-e-como-funciona/'
@@ -85,9 +84,7 @@
         cores. Essa tabela pode ser visualizada na tela como uma imagem colorida, onde cada valor de cor é substituído
         pela cor propriamente dita, ou na forma que ela é realmente gravada, com os códigos das cores.</p>
       <p><strong>Formato da imagem</strong>:</p>
-      <img src='images/gif/mapa-bits.gif' alt='Exemplo do formato bitmap (mapa de bits)' class='center-content' />
-      <p class='reminder'><strong>Lembrete</strong>: Exibir o console do navegador para demonstrar a "ideia" do bitmap
-      </p>
+      <img src='./images/gif/mapa-bits.gif' alt='Exemplo do formato bitmap (mapa de bits)' class='center-content' />
       <p><strong>Referências</strong>: <a
           href='https://www.tecnoveste.com.br/gif-o-que-e-para-que-serve-e-como-funciona/'
           target='_blank'>tecnoveste</a>,
@@ -101,6 +98,9 @@
   <div class='presentation hide' id='fakeVisualBitMap'>
     <div class='presentation'>
       <h1>1990 - BMP</h1>
+      <p><strong>Ver</strong>: <a href='./js/visual-bitmap.js' target='_blank'>Código de exemplo em JS para montar a "imagem"</a></p>
+      <p class='reminder'><strong>Lembrete</strong>: Exibir o console do navegador para demonstrar a "ideia" do bitmap
+      </p>
       <div class='bitmap'>
         <div id='visualBitMap'></div>
       </div>
@@ -112,6 +112,7 @@
   <div class='hide' id='fakeSpaceInvaders'>
     <div class='presentation'>
       <h1>1990 - BMP</h1>
+      <p><strong>Ver</strong>: <a href='./js/space-invaders.js' target='_blank'>Código JS do Array</a></p>
       <div class='bitmap'>
         <div id='spaceInvaders'></div>
       </div>
@@ -123,6 +124,7 @@
   <div class='hide' id='fakeIconMinu'>
     <div class='presentation'>
       <h1>1990 - BMP</h1>
+      <p><strong>Ver</strong>: <a href='./js/icon-minu.js' target='_blank'>Código JS do Array</a></p>
       <div class='bitmap'>
         <div id='iconMinu'></div>
       </div>
@@ -138,7 +140,7 @@
         digitais para armazenar fotos, pois suporta 16 milhões cores. O formato também suporta vários níveis de
         compactação, o que o torna ideal para gráficos para web. </p>
       <p><strong>Exemplo</strong>:</p>
-      <img src='images/jpg/o-que-e-jpeg_jpg.jpeg' alt='Exemplo de imagem no formato JPG' class='center-content' />
+      <img src='./images/jpg/o-que-e-jpeg_jpg.jpeg' alt='Exemplo de imagem no formato JPG' class='center-content' />
       <p><strong>Referência</strong>: <a
           href='https://www.eduardo-monica.com/new-blog/o-que-e-jepg-jpg-vantagens-desvantagens' target='_blank'>Eduardo
           & Mônica</a></p>
@@ -154,12 +156,12 @@
         Além disso, seus grandes diferenciais estão na capacidade da imagem não perder a qualidade no caso de compressão
         e na capacidade de suportar a transparência. </p>
       <p><strong>Formato</strong>:</p>
-      <img src='images/png/formato-png.png' alt='Exemplo de imagem simulando vídeo no formato GIF'
+      <img src='./images/png/formato-png.png' alt='Exemplo de imagem simulando vídeo no formato GIF'
         class='center-content' />
       <p><strong>Exemplo</strong> (aplicação sobre uma div com background azul):</p>
       <div class='bg-blue'>
         <img
-          src='images/png/kisspng-computer-icons-sample-directory-futuristic-5abea10ab94e57.312077521522442506759.png'
+          src='./images/png/kisspng-computer-icons-sample-directory-futuristic-5abea10ab94e57.312077521522442506759.png'
           alt='Exemplo de imagem simulando vídeo no formato GIF' class='center-content' />
       </div>
       <p><strong>Referências</strong>: <a href='https://www.futuraexpress.com.br/blog/o-que-e-png/'
@@ -176,7 +178,7 @@
       <h1>2001 - SVG</h1>
       <p>Carece de mais informações.</p>
       <p><strong>Exemplo</strong>:</p>
-      <img src='images/svg/logotipo-minu.svg' alt='Exemplo de imagem no formato SVG' class='center-content' />
+      <img src='./images/svg/logotipo-minu.svg' alt='Exemplo de imagem no formato SVG' class='center-content' />
       <p><strong>Referência</strong>: <a
           href='https://www.xxx.com' target='_blank'>xxx</a></p>
     </div>
@@ -192,7 +194,7 @@
         <br /><strong>Tamanho</strong>: 9.7kb
       </p>
       <div class='image-box bmp'>
-        <img src='images/bmp/logotipo-minu.bmp' alt='Logo Minu' id='bmp-img' />
+        <img src='./images/bmp/logotipo-minu.bmp' alt='Logo Minu' id='bmp-img' />
       </div>
     </div>
     <span class='btn txt-left' onClick='showContent("#bmpLogoMinu", "#fakeIconMinu")'>Anterior</span>
@@ -207,17 +209,17 @@
         <br /><strong>Tamanho</strong>: 2kb (sem minificar o fonte)
       </p>
       <div class='image-box svg'>
-        <img src='images/svg/logotipo-minu.svg' alt='Logo Minu' id='svg-img' />
+        <img src='./images/svg/logotipo-minu.svg' alt='Logo Minu' id='svg-img' />
       </div>
     </div>
     <span class='btn txt-left' onClick='showContent("#svgLogoMinu", "#bmpLogoMinu")'>Anterior</span>
   </div>
 
-  <script src='js/space-invaders.js'></script>
-  <script src='js/icon-minu.js'></script>
-  <script src='js/visual-bitmap.js'></script>
-  <script src='js/bmp-logo-minu.js'></script>
-  <script src='js/svg-logo-minu.js'></script>
+  <script src='./js/space-invaders.js'></script>
+  <script src='./js/icon-minu.js'></script>
+  <script src='./js/visual-bitmap.js'></script>
+  <script src='./js/bmp-logo-minu.js'></script>
+  <script src='./js/svg-logo-minu.js'></script>
 </body>
 
 </html>

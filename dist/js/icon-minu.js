@@ -6,6 +6,5 @@ let arrayIconMinu = [
   [petroleum, greenMinu, petroleum, petroleum, greenMinu, petroleum, petroleum, greenMinu, petroleum],
   [petroleum, greenMinu, petroleum, petroleum, greenMinu, petroleum, petroleum, greenMinu, petroleum],
   [petroleum, greenMinu, petroleum, petroleum, greenMinu, petroleum, petroleum, greenMinu, petroleum],
-  [petroleum, greenMinu, petroleum, petroleum, greenMinu, petroleum, petroleum, greenMinu, petroleum],
   [petroleum, petroleum, petroleum, petroleum, petroleum, petroleum, petroleum, petroleum, petroleum]
 ];
