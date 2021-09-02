@@ -17,8 +17,8 @@
   <div class='' id='home'>
     <div class='presentation'>
       <h1>Imagens para Web</h1>
-      <p>O proposito dessa apresentação é demonstrar os <strong class='highlight-red'> tipos de imagens</strong> /
-        <strong>diferenças entre eles</strong>, <strong class='highlight-red'><span class='black-border'>como</span> e
+      <p>O proposito dessa apresentação é demonstrar os <strong class='highlight-red'> </strong>, <strong
+          class='highlight-red'><span class='black-border'>como</span> e
           <span class='black-border'>quando</span> usar cada um deles</strong> e <strong>algumas dicas para
           otimização</strong>.
       </p>
@@ -60,7 +60,19 @@
           target='_blank'>visuarea</a></p>
     </div>
     <span class='btn txt-left' onClick='showContent("#timeline", "#timeTunnel")'>Anterior</span>
-    <span class='btn txt-right' onClick='showContent("#timeline", "#formatGif")'>Próximo</span>
+    <span class='btn txt-right' onClick='showContent("#timeline", "#typeAndDiferences")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='typeAndDiferences'>
+    <div class='presentation'>
+      <h1>Tipos de imagens e diferenças</h1>
+      <p>Aproveitando a linha do tempo, vamos passar em ordem cronologica pelos formatos mais comuns da web, sendo eles:
+        GIF, BMP (para entender o que é um bitmap), JPEG, PNG, SVG, WEBP.</p>
+      <img src='./images/presentation/images.jpg' alt='Imagem representando diversos tipos de imagens digitais'
+        width='500' class='center-content' />
+    </div>
+    <span class='btn txt-left' onClick='showContent("#typeAndDiferences", "#timeline")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#typeAndDiferences", "#formatGif")'>Próximo</span>
   </div>
 
   <div class='hide' id='formatGif'>
@@ -69,6 +81,8 @@
       <p>O GIF é uma imagem em formato de <strong>bitmap</strong>, que suporta até 8 bits por pixel para cada imagem, o
         que permite que as figuras obterem uma cartela de até 256 cores. Seu diferencial diante dos demais formatos
         existentes é que permite que se crie animações ou pequenos clipes.</p>
+      <p><strong>Quando usar?</strong> Em situações que as imagens tem poucas cores, e uma animação é rapida (com poucos
+        frames).</p>
       <p><strong>Exemplo</strong>:</p>
       <img src='./images/gif/anigif_enhanced-buzz-8915-1405685252-4.gif'
         alt='Exemplo de imagem simulando vídeo no formato GIF' class='center-content' />
@@ -76,7 +90,7 @@
           href='https://www.tecnoveste.com.br/gif-o-que-e-para-que-serve-e-como-funciona/'
           target='_blank'>tecnoveste</a></p>
     </div>
-    <span class='btn txt-left' onClick='showContent("#formatGif", "#timeline")'>Anterior</span>
+    <span class='btn txt-left' onClick='showContent("#formatGif", "#typeAndDiferences")'>Anterior</span>
     <span class='btn txt-right' onClick='showContent("#formatGif", "#formatBmp")'>Próximo</span>
   </div>
 
@@ -86,6 +100,7 @@
       <p>BMP é um formato de imagem bitmap, ou seja, um mapa de bits. É uma tabela cujos elementos contêm códigos de
         cores. Essa tabela pode ser visualizada na tela como uma imagem colorida, onde cada valor de cor é substituído
         pela cor propriamente dita, ou na forma que ela é realmente gravada, com os códigos das cores.</p>
+      <p><strong>Quando usar?</strong> Não recomendo o uso para web.</p>
       <p><strong>Formato da imagem</strong>:</p>
       <img src='./images/gif/mapa-bits.gif' alt='Exemplo do formato bitmap (mapa de bits)' class='center-content' />
       <p><strong>Referências</strong>: <a
@@ -143,6 +158,8 @@
       <p>JPEG (Joint Photographic Experts Group) é um formato de arquivo de imagem popular, geralmente usado por câmeras
         digitais para armazenar fotos, pois suporta 16 milhões cores. O formato também suporta vários níveis de
         compactação, o que o torna ideal para gráficos para web. </p>
+      <p><strong>Quando usar?</strong> Normalmente usado para fotos, ou imagens com extensa gama de cores. Sua
+        compactação ajuda o tamanho do arquivo não ser muito "pesado".</p>
       <p><strong>Exemplo</strong>:</p>
       <img src='./images/jpg/o-que-e-jpeg_jpg.jpeg' alt='Exemplo de imagem no formato JPG' class='center-content' />
       <p><strong>Referência</strong>: <a
@@ -160,6 +177,8 @@
         ambiente web (mas não limitado ao mesmo).
         Além disso, seus grandes diferenciais estão na capacidade da imagem não perder a qualidade no caso de compressão
         e na capacidade de suportar a transparência. </p>
+      <p><strong>Quando usar?</strong> Normalmente usado em situações onde se tem poucas cores (ilustrações, artes,
+        icones). Como não tem uma compressão tão boa quanto o JPG para fotos.</p>
       <p><strong>Formato</strong>:</p>
       <img src='./images/png/formato-png.png' alt='Exemplo de imagem simulando vídeo no formato GIF'
         class='center-content' />
@@ -187,9 +206,10 @@
         como o PNG, o que torna o SVG ideal para manter a aparência dos sites em diversos tamanhos de tela.</p>
       <p>O SVG diferente das outras imagens, tem seu "código aberto", ele tem uma estrutura similar a XML com CSS, ao
         qual o desenvolvedor pode interagir com o código e passar propriedades de cores.</p>
-      <p class='reminder'><strong>Lembrete</strong>: Depois da demonstração abaixo (incluindo zoom do navegador), mostrar o código fonte das imagens no VS Code.</p>
-      <p><strong>Exemplo</strong>:
-      <p>
+      <p><strong>Quando usar?</strong> Sempre que possível para icones, ilustrações, ou artes simples vetoriais.</p>
+      <p class='reminder'><strong>Lembrete</strong>: Depois da demonstração abaixo (incluindo zoom do navegador),
+        mostrar o código fonte das imagens no VS Code.</p>
+      <p><strong>Exemplo</strong>:</p>
       <table class='table'>
         <tr>
           <th width='50%'>SVG</th>
@@ -241,11 +261,106 @@
       <p><strong>Referência</strong>: <a href='https://rockcontent.com/br/blog/svg/' target='_blank'>rockcontent</a></p>
     </div>
     <span class='btn txt-left' onClick='showContent("#formatSVG", "#formatPng")'>Anterior</span>
-    <span class='btn txt-right' onClick='showContent("#formatSVG", "#bmpLogoMinu")'>Próximo</span>
+    <span class='btn txt-right' onClick='showContent("#formatSVG", "#formatWebp")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='formatWebp'>
+    <div class='presentation'>
+      <h1>2010 - WEBP</h1>
+      <p>Criado em 2010 pelo Google, o formato WebP representa imagens com a mesma qualidade em um tamanho menor. Ou
+        seja, economiza espaço, aumenta a velocidade de uma página e (quase) não perde em qualidade. Na prática, tem
+        como
+        principal objetivo compactar imagens de forma mais eficiente para oferecer uma experiência mais rápida ao
+        usuário.</p>
+      <p><strong>Quando usar?</strong> Sempre que possível para fotos ou imagens com muitas cores. O formato oferece o
+        melhor ganho em comparação a JPG, PNG e
+        GIF.</p>
+      <p>Para ter uma comparação justa, abaixo segue um comparativo de duas imagens, JPG e WWEBP, ambas otimizadas pelo
+        <a href='https://squoosh.app/' target='_blank'>Squoosh</a>, ambas com 75% de qualidade.
+      </p>
+
+      <p><strong>Comparativo</strong>:</p>
+      <table class='table'>
+        <tr>
+          <th width='50%'>JPG</th>
+          <th width='50%'>WEBP</th>
+        </tr>
+        <tr>
+          <td colspan='2'>Imagem representando natureza</td>
+        </tr>
+        <tr>
+          <td>
+            <a href='./images/jpg/nature.jpg' target='_blank'>
+              <img src='./images/jpg/nature.jpg' alt='Exemplo de imagem usando JPG (natureza)' width='500'
+                class='center-content' />
+            </a>
+          </td>
+          <td>
+            <a href='./images/webp/nature.webp' target='_blank'>
+              <img src='./images/webp/nature.webp' alt='Exemplo de imagem usando WEBP (natureza)' width='500'
+                class='center-content' />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Size: 1140x550px (original)
+              <br />Espaço em disco: 136.7KB
+            </p>
+          </td>
+          <td>
+            <p>Size: 1140x550px
+              <br />Espaço em disco: 95.5KB (30% de economia)
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <p class='reminder'><strong>Lembrete</strong>: Para os olhos mais atentos, é perceptivel o detalhe das nuvens no
+        ceu.</p>
+
+      <p><strong>Referências</strong>: <a href='https://rockcontent.com/br/blog/webp/' target='_blank'>rockcontent</a>
+      </p>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#formatWebp", "#formatPng")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#formatWebp", "#useCase")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='useCase'>
+    <div class='presentation'>
+      <h1>Quando usar, qual tipo?</h1>
+      <table class='table'>
+        <tr>
+          <th width='50%'>Fotos (muitas cores, tamanho maior)</th>
+          <th width='50%'>Ícones, ilustrações (poucas cores)</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <ol>1º 🏆 WEBP</ol>
+              <ol>2º JPG</ol>
+              <ol>3º PNG</ol>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <ol>1º 🏆 SVG</ol>
+              <ol>2º PNG</ol>
+              <ol>3º GIF</ol>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <p><strong>O que pode impactar na decisão?</strong> Alguns navegadores não tem suporte a WEBP e SVG, sendo assim é
+        bom conhecer seu usuário antes de definir o tipo <del></del> imagem.</p>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#useCase", "#formatWebp")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#useCase", "#bmpLogoMinu")'>Próximo</span>
   </div>
 
   <div class='hide' id='bmpLogoMinu'>
     <div class='presentation'>
+      <h1>Diferença pratica: Imagem Matricial</h1>
       <input type='range' min='1' max='10' value='1' class='slider' id='range-bmp'>
       <p><strong>Nome do arquivo</strong>: logotipo-minu.bmp
         <br /><strong>Tipo</strong>: BMP (criado no GIMP - Abrir no editor para mostrar)
@@ -255,12 +370,13 @@
         <img src='./images/bmp/logotipo-minu.bmp' alt='Logo Minu' id='bmp-img' />
       </div>
     </div>
-    <span class='btn txt-left' onClick='showContent("#bmpLogoMinu", "#formatSVG")'>Anterior</span>
+    <span class='btn txt-left' onClick='showContent("#bmpLogoMinu", "#useCase")'>Anterior</span>
     <span class='btn txt-right' onClick='showContent("#bmpLogoMinu", "#svgLogoMinu")'>Próximo</span>
   </div>
 
   <div class='hide' id='svgLogoMinu'>
     <div class='presentation'>
+      <h1>Diferença pratica: Imagem Vetorial</h1>
       <input type='range' min='1' max='10' value='1' class='slider' id='range-svg'>
       <p><strong>Nome do arquivo</strong>: logotipo-minu.svg
         <br /><strong>Tipo</strong>: SVG (criado pelo Tiago Parra, editado no VS Code)
