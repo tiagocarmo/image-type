@@ -323,16 +323,29 @@
       </p>
     </div>
     <span class='btn txt-left' onClick='showContent("#formatWebp", "#formatPng")'>Anterior</span>
-    <span class='btn txt-right' onClick='showContent("#formatWebp", "#useCase")'>Próximo</span>
+    <span class='btn txt-right' onClick='showContent("#formatWebp", "#quiz")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='quiz'>
+    <div class='presentation'>
+      <h1>QUIZ</h1>
+      <p>Acesse o site <strong>www.menti.com</strong> e insira o código <strong>6533 8373</strong> para participar do
+        QUIZ.</p>
+      <img src='./images/presentation/menti.svg' alt='QRCode de acesso ao site www.menti.com' width='400'
+        class='center-content' />
+    </div>
+    <span class='btn txt-left' onClick='showContent("#quiz", "#formatWebp")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#quiz", "#useCase")'>Próximo</span>
   </div>
 
   <div class='hide' id='useCase'>
     <div class='presentation'>
       <h1>Quando usar, qual tipo?</h1>
-      <table class='table'>
+      <table class='table' aria-describedby='Melhores formatos de imagens'>
         <tr>
-          <th width='50%'>Fotos (muitas cores, tamanho maior)</th>
-          <th width='50%'>Ícones, ilustrações (poucas cores)</th>
+          <th width='50%' scope='Ranking de imagens fotográficas e/ou artes complexas'>Fotos (muitas cores, tamanho
+            maior)</th>
+          <th width='50%' scope='Ranking de icones, logos e ilustrações'>Ícones, Logos e ilustrações (poucas cores)</th>
         </tr>
         <tr>
           <td>
@@ -354,7 +367,7 @@
       <p><strong>O que pode impactar na decisão?</strong> Alguns navegadores não tem suporte a WEBP e SVG, sendo assim é
         bom conhecer seu usuário antes de definir o tipo <del></del> imagem.</p>
     </div>
-    <span class='btn txt-left' onClick='showContent("#useCase", "#formatWebp")'>Anterior</span>
+    <span class='btn txt-left' onClick='showContent("#useCase", "#quiz")'>Anterior</span>
     <span class='btn txt-right' onClick='showContent("#useCase", "#bmpLogoMinu")'>Próximo</span>
   </div>
 
@@ -387,6 +400,55 @@
       </div>
     </div>
     <span class='btn txt-left' onClick='showContent("#svgLogoMinu", "#bmpLogoMinu")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#svgLogoMinu", "#optimization")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='optimization'>
+    <div class='presentation'>
+      <h1>Dicas de otimização</h1>
+      <p>Temos muitas formas de fazer as otimizações das imagens. As formas mais "automaticas", o time que gerencia o
+        conteúdo não precisa tomar "tanto" cuidado com os arquivos.</p>
+      <p>Já na forma manual, existem softwares para ajudar, mas o cuidado com a imagem é um ponto fundamental na
+        estratégia.</p>
+
+      <table class='table' aria-describedby='Dicas de otimização de imagens'>
+        <tr>
+          <th width='50%' scope='Automático'>Automático</th>
+          <th width='50%' scope='Manual'>Manual</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <ol><strong>NextJS / Image</strong> - Em projetos NextJS essa é uma boa opção, de baixo custo e bom ganho.
+              </ol>
+              <ol><strong>Cloudinary</strong> - Serviço de armazenamento, conversão de imagens que pode entregar a
+                melhor imagem para o usuário.</ol>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <ol><strong>Squoosh.app</strong> - O NextJS usava um webcomponent do Squoosh. Muito bom!</ol>
+              <ol><strong>TinyPNG</strong> - Antigo porem robusto!</ol>
+              <ol>+ <strong>GIMP</strong>, e outros!</ol>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <span class='btn txt-left' onClick='showContent("#optimization", "#svgLogoMinu")'>Anterior</span>
+    <span class='btn txt-right' onClick='showContent("#optimization", "#end")'>Próximo</span>
+  </div>
+
+  <div class='hide' id='end'>
+    <div class='presentation'>
+      <h1>Obrigado!</h1>
+      <p>Qualquer duvida só entrar em contato.
+        <br />Não sou especialista em imagens, mas ficarei feliz em ajudar ;)
+      </p>
+      <img src='./images/presentation/tiago-carmo.png' alt='Imagem de avatar de Tiago Carmo'
+        class='center-content avatar' />
+    </div>
+    <span class='btn txt-left' onClick='showContent("#end", "#optimization")'>Anterior</span>
   </div>
 
   <script src='./js/space-invaders.js'></script>

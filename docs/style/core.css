@@ -131,3 +131,10 @@ a:hover, a:active, a:focus, a:visited {
   padding: 20px;
   border: 1px solid black;
 }
+
+.avatar {
+  border-radius: 50%;
+  float: right;
+  max-width: 400px;
+  margin-top: -50px;
+}
