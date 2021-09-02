@@ -1,12 +1,20 @@
 {
-  "name": "images",
+  "name": "image-type",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "images",
+    "web",
+    "docs"
+  ],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
-  "homepage": "https://tiagocarmo.github.io/image-type"
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "homepage": "https://tiagocarmo.github.io/image-type/"
 }
