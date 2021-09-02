@@ -8,6 +8,7 @@
   <title>Imagens para Web</title>
   <link href='./style/cartograph.css' rel='stylesheet' />
   <link href='./style/core.css' rel='stylesheet' />
+  <link href='./style/core-responsive.css' rel='stylesheet' />
   <script src='./js/colors.js'></script>
   <script src='./js/core.js'></script>
 </head>
@@ -21,6 +22,8 @@
           <span class='black-border'>quando</span> usar cada um deles</strong> e <strong>algumas dicas para
           otimização</strong>.
       </p>
+      <img src='./images/presentation/web-design.jpg'
+        alt='Imagem demonstra varias cores entrando na tela de um notebook' class='center-content' />
     </div>
     <span class='btn txt-right' onClick='showContent("#home", "#timeTunnel")'>Próximo</span>
   </div>
@@ -98,7 +101,8 @@
   <div class='presentation hide' id='fakeVisualBitMap'>
     <div class='presentation'>
       <h1>1990 - BMP</h1>
-      <p><strong>Ver</strong>: <a href='./js/visual-bitmap.js' target='_blank'>Código de exemplo em JS para montar a "imagem"</a></p>
+      <p><strong>Ver</strong>: <a href='./js/visual-bitmap.js' target='_blank'>Código de exemplo em JS para montar a
+          "imagem"</a></p>
       <p class='reminder'><strong>Lembrete</strong>: Exibir o console do navegador para demonstrar a "ideia" do bitmap
       </p>
       <div class='bitmap'>
@@ -152,7 +156,8 @@
   <div class='hide' id='formatPng'>
     <div class='presentation'>
       <h1>1996 - PNG</h1>
-      <p>A sigla PNG significa “Portable Network Graphics” e consiste em um formato de imagem amplamente utilizado no ambiente web (mas não limitado ao mesmo).
+      <p>A sigla PNG significa “Portable Network Graphics” e consiste em um formato de imagem amplamente utilizado no
+        ambiente web (mas não limitado ao mesmo).
         Além disso, seus grandes diferenciais estão na capacidade da imagem não perder a qualidade no caso de compressão
         e na capacidade de suportar a transparência. </p>
       <p><strong>Formato</strong>:</p>
@@ -176,11 +181,64 @@
   <div class='hide' id='formatSVG'>
     <div class='presentation'>
       <h1>2001 - SVG</h1>
-      <p>Carece de mais informações.</p>
-      <p><strong>Exemplo</strong>:</p>
-      <img src='./images/svg/logotipo-minu.svg' alt='Exemplo de imagem no formato SVG' class='center-content' />
-      <p><strong>Referência</strong>: <a
-          href='https://www.xxx.com' target='_blank'>xxx</a></p>
+      <p>Diferente das imagens anteriores que eram matriciais (bitmap e/ou outras técnicas) o SVG é vetorial, ou seja, o
+        SVG é um formato de arquivo usado para a criação de logotipos, ícones e outras artes que é altamente escalável.
+        Além de proporcionar altíssima qualidade de imagem, é extremamente escalável se compararmos com outros formatos,
+        como o PNG, o que torna o SVG ideal para manter a aparência dos sites em diversos tamanhos de tela.</p>
+      <p>O SVG diferente das outras imagens, tem seu "código aberto", ele tem uma estrutura similar a XML com CSS, ao
+        qual o desenvolvedor pode interagir com o código e passar propriedades de cores.</p>
+      <p class='reminder'><strong>Lembrete</strong>: Depois da demonstração abaixo (incluindo zoom do navegador), mostrar o código fonte das imagens no VS Code.</p>
+      <p><strong>Exemplo</strong>:
+      <p>
+      <table class='table'>
+        <tr>
+          <th width='50%'>SVG</th>
+          <th width='50%'>PNG</th>
+        </tr>
+        <tr>
+          <td colspan='2'>Icone de um telefone</td>
+        </tr>
+        <tr>
+          <td><img src='./images/svg/phone.svg' alt='Exemplo de imagem usando SVG (telefone)' width='128'
+              class='center-content' /></td>
+          <td><img src='./images/png/phone.png' alt='Exemplo de imagem usando PNG (telefone)' width='128'
+              class='center-content' /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Size: 32x32px (original)
+              <br />Espaço em disco: 3.9KB
+            </p>
+          </td>
+          <td>
+            <p>Size: 128x128px
+              <br />Espaço em disco: 6.3kb
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan='2'>Icone de um vírus</td>
+        </tr>
+        <tr>
+          <td><img src='./images/svg/corona.svg' alt='Exemplo de imagem usando SVG (vírus)' width='128'
+              class='center-content' /></td>
+          <td><img src='./images/png/corona.png' alt='Exemplo de imagem usando PNG (vírus)' width='128'
+              class='center-content' /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Size: 154x154px (original)
+              <br />Espaço em disco: 3.6KB
+            </p>
+          </td>
+          <td>
+            <p>Size: 128x128px
+              <br />Espaço em disco: 5.5kb
+            </p>
+          </td>
+        </tr>
+      </table>
+      <p><strong>Referência</strong>: <a href='https://rockcontent.com/br/blog/svg/' target='_blank'>rockcontent</a></p>
     </div>
     <span class='btn txt-left' onClick='showContent("#formatSVG", "#formatPng")'>Anterior</span>
     <span class='btn txt-right' onClick='showContent("#formatSVG", "#bmpLogoMinu")'>Próximo</span>
@@ -197,7 +255,7 @@
         <img src='./images/bmp/logotipo-minu.bmp' alt='Logo Minu' id='bmp-img' />
       </div>
     </div>
-    <span class='btn txt-left' onClick='showContent("#bmpLogoMinu", "#fakeIconMinu")'>Anterior</span>
+    <span class='btn txt-left' onClick='showContent("#bmpLogoMinu", "#formatSVG")'>Anterior</span>
     <span class='btn txt-right' onClick='showContent("#bmpLogoMinu", "#svgLogoMinu")'>Próximo</span>
   </div>
 
@@ -206,7 +264,7 @@
       <input type='range' min='1' max='10' value='1' class='slider' id='range-svg'>
       <p><strong>Nome do arquivo</strong>: logotipo-minu.svg
         <br /><strong>Tipo</strong>: SVG (criado pelo Tiago Parra, editado no VS Code)
-        <br /><strong>Tamanho</strong>: 2kb (sem minificar o fonte)
+        <br /><strong>Tamanho</strong>: 1.8KB
       </p>
       <div class='image-box svg'>
         <img src='./images/svg/logotipo-minu.svg' alt='Logo Minu' id='svg-img' />

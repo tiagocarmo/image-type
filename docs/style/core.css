@@ -122,3 +122,12 @@ a:hover, a:active, a:focus, a:visited {
 .bg-blue {
   background-color: blue;
 }
+
+.table {
+  width: 95%;
+}
+
+.table td {
+  padding: 20px;
+  border: 1px solid black;
+}
